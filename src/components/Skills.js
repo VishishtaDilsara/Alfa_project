@@ -32,7 +32,7 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
+              <h2>Our Skills</h2>
               <p>
                 We specialize in creating effective digital strategies that
                 drive growth, boost engagement, and enhance your onlinepresence.
