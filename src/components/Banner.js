@@ -7,12 +7,12 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
+    "Logo design",
+    "Social Media Post Design",
     "Facebook Page Manage",
     "Instagram Page Manage",
     "Market Research",
     "Business Analysis",
-    "Logo design",
-    "Social Media Post Design",
   ];
   const [text, setText] = useState("");
   const period = 2000;

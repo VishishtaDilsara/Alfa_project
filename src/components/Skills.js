@@ -47,7 +47,19 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="Image" />
+                  <h5>Logo design</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
                   <h5>Facebook Page Manage</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Image" />
+                  <h5>Visual Identity & Branding</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Image" />
+                  <h5>Social Media Post Design</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
@@ -55,19 +67,11 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Market Research</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
                   <h5>Business Analysis</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Logo design</h5>
-                </div>
-                <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Social Media Post Design</h5>
+                  <h5>Market Research</h5>
                 </div>
               </Carousel>
             </div>
