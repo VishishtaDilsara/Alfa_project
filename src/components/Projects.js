@@ -12,6 +12,21 @@ import projectImg9 from "../assets/img/Project images/Logo/projImg9.png";
 import projectImg10 from "../assets/img/Project images/Logo/projImg10.png";
 import projectImg11 from "../assets/img/Project images/Logo/projImg11.png";
 import projectImg12 from "../assets/img/Project images/Logo/projImg12.png";
+import projectImg13 from "../assets/img/Project images/Logo/projImg13.png";
+import projectImg14 from "../assets/img/Project images/Logo/projImg14.png";
+import projectImg15 from "../assets/img/Project images/Logo/projImg15.png";
+import projectImg16 from "../assets/img/Project images/Logo/projImg16.png";
+import projectImg17 from "../assets/img/Project images/Logo/projImg17.png";
+import projectImg18 from "../assets/img/Project images/Logo/projImg18.png";
+import projectImg19 from "../assets/img/Project images/Logo/projImg19.png";
+import projectImg20 from "../assets/img/Project images/Logo/projImg20.png";
+import projectImg21 from "../assets/img/Project images/Logo/projImg21.png";
+import projectImg22 from "../assets/img/Project images/Logo/projImg22.png";
+import projectImg23 from "../assets/img/Project images/Logo/projImg23.png";
+import projectImg24 from "../assets/img/Project images/Logo/projImg24.png";
+import projectImg25 from "../assets/img/Project images/Logo/projImg25.png";
+import projectImg26 from "../assets/img/Project images/Logo/projImg26.png";
+import projectImg27 from "../assets/img/Project images/Logo/projImg27.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
@@ -88,6 +103,81 @@ export const Projects = () => {
         "Another beautiful oder that came through Freelancing.This was created in the colonies of Miasi colonies.",
       imgUrl: projectImg12,
     },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg13,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg14,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg15,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg16,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg17,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg18,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg19,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg20,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg21,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg22,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg23,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg24,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg25,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg26,
+    },
+    {
+      title: "simple",
+      description: "Simple",
+      imgUrl: projectImg27,
+    },
   ];
   return (
     <section className="project" id="project">
@@ -114,7 +204,7 @@ export const Projects = () => {
                   <Nav.Link eventKey="second">Facebook Posts</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Illustrator Arts</Nav.Link>
+                  <Nav.Link eventKey="third">AI Arts</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
