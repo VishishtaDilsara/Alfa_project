@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -14,6 +15,7 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
+  const form = useRef();
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -25,23 +27,33 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
+
+    try {
+      // Sending email using EmailJS
+      const result = await emailjs.sendForm(
+        "service_7u009r8", // Your EmailJS service ID
+        "template_mx6r8sj", // Your EmailJS template ID
+        form.current, // The reference to your form
+        "Nc3FVqDNjxM8p7MV0" // Your EmailJS public key
+      );
+
+      if (result.status === 200) {
+        setStatus({ success: true, message: "Message sent successfully" });
+      } else {
+        setStatus({
+          success: false,
+          message: "Something went wrong. Please try again later.",
+        });
+      }
+    } catch (error) {
       setStatus({
         success: false,
-        message: "Something Went Wrong. Please try again later",
+        message: "Something went wrong. Please try again later.",
       });
+      console.log("FAILED...", error.text);
+    } finally {
+      setButtonText("Send");
+      setFormDetails(formInitialDetails);
     }
   };
 
@@ -54,11 +66,12 @@ export const Contact = () => {
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
+                    name="user_fname"
                     value={formDetails.firstName}
                     placeholder="First Name"
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
@@ -67,6 +80,7 @@ export const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
+                    name="user_lname"
                     value={formDetails.lastName}
                     placeholder="Last Name"
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
@@ -75,6 +89,7 @@ export const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="email"
+                    name="user_email"
                     value={formDetails.email}
                     placeholder="Email Address"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
@@ -83,6 +98,7 @@ export const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="tel"
+                    name="user_phone"
                     value={formDetails.phone}
                     placeholder="Phone No."
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
@@ -90,7 +106,8 @@ export const Contact = () => {
                 </Col>
                 <Col>
                   <textarea
-                    row="6"
+                    name="message"
+                    rows="6"
                     value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
