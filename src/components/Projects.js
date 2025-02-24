@@ -29,6 +29,11 @@ import projectImg26 from "../assets/img/Project images/Logo/projImg26.png";
 import projectImg27 from "../assets/img/Project images/Logo/projImg27.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
+import projectImg18_1 from "../assets/img/New folder/SugarDrop 1.jpg";
+import projectImg18_2 from "../assets/img/New folder/SugarDrop 2.jpg";
+import projectImg18_3 from "../assets/img/New folder/SugarDrop 3.jpg";
+import projectImg18_4 from "../assets/img/New folder/SugarDrop 4.jpg";
+
 export const Projects = () => {
   const Projects = [
     {
@@ -138,6 +143,12 @@ export const Projects = () => {
       description:
         "The 'Sugerdrop' logo features a stylized sugar drop with bold typography, using soft pastel colors to evoke sweetness and freshness. Darker tones represent the delivery aspect, while subtle food-related elements, like a fork or spoon, highlight the food delivery service. The design is modern, clean, and inviting.",
       imgUrl: projectImg18,
+      moreImages: [
+        projectImg18_1,
+        projectImg18_2,
+        projectImg18_3,
+        projectImg18_4,
+      ],
     },
     {
       title: "Gizzel",
@@ -225,7 +236,15 @@ export const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     {Projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />;
+                      return (
+                        <ProjectCard
+                          key={index}
+                          title={project.title}
+                          description={project.description}
+                          imgUrl={project.imgUrl}
+                          moreImages={project.moreImages}
+                        />
+                      );
                     })}
                   </Row>
                 </Tab.Pane>
