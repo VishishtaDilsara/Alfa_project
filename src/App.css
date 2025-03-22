@@ -725,3 +725,89 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .close-slider:hover {
   background-color: #ff1a1a;
 }
+
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Dark background for footer */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  color: white; /* Default text color for the footer */
+}
+
+/* Logo Styling */
+.footer-logo {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+/* Footer Section Heading */
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* White text for the heading */
+  margin-bottom: 15px;
+}
+
+/* Footer Links Styling (Quick Links) */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Align items in a row */
+  justify-content: center; /* Center the links horizontally */
+}
+
+.footer-links li {
+  margin-right: 30px; /* Space between links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white; /* White text for the links */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007bff; /* Change to primary color on hover */
+  text-decoration: underline;
+  transform: translateY(-3px); /* Adds slight hover effect */
+}
+
+/* Footer Contact Info */
+.footer p {
+  color: white; /* White text for contact information */
+  font-size: 14px;
+}
+
+/* Copyright Section */
+.text-muted {
+  color: white !important;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive Footer Design */
+@media (max-width: 768px) {
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-heading {
+    text-align: center;
+  }
+
+  .footer-links {
+    text-align: center;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+  }
+
+  .footer-links li {
+    margin-bottom: 15px; /* Add space between links when stacked */
+    margin-right: 0; /* Remove horizontal margin */
+  }
+
+  .social-icon {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
