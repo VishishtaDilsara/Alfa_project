@@ -748,7 +748,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 15px;
 }
 
-/* Footer Links Styling (Quick Links) */
+/* Footer Links Styling (Quick Links in a circle) */
 .footer-links {
   list-style: none;
   padding: 0;
@@ -757,20 +757,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .footer-links li {
-  margin-right: 30px; /* Space between links */
+  margin-right: 20px; /* Space between links */
 }
 
 .footer-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: white; /* White text for the links */
   font-size: 16px;
-  transition: all 0.3s ease;
+  width: 100px; /* Width of the circle */
+  height: 30px; /* Height of the circle */
+  border-radius: 10%; /* Makes the link circular */
+  border: 2px solid white;
+  transition: all 0.3s ease; /* Smooth transition on hover */
+  text-align: center;
+  line-height: 50px; /* Centers the text vertically */
 }
 
 .footer-links a:hover {
-  color: #007bff; /* Change to primary color on hover */
-  text-decoration: underline;
-  transform: translateY(-3px); /* Adds slight hover effect */
+  background-color: #d3d3d3; /* Darker background on hover */
+  transform: scale(1.1); /* Slightly enlarge the circle on hover */
+  color: #000;
 }
 
 /* Footer Contact Info */
