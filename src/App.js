@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Reviews } from "./components/Reviews";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Reviews />
       <Contact />
       <Footer />
     </div>

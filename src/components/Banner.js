@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/FULL.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -56,24 +58,34 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">
-              Unlock Your Brand's Potential with ALFHAXEONIX
-            </span>
-            <h1>
-              {`ALPHAXEONIX `}
-              <br />
-              <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              At ALPHAXEONIX, We Transform brands into powerful digital
-              presences through innovative branding, digital marketing
-              strategies, And effective audience engagement. Our Mission is to
-              craft unique brand identities that resonate, inspire and drive
-              growth in the fast-paces digital world
-            </p>
-            <button onClick={() => console.log("connect")}>
-              Let's connect <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">
+                    Unlock Your Brand's Potential with ALFHAXEONIX
+                  </span>
+                  <h1>
+                    {`ALPHAXEONIX `}
+                    <br />
+                    <span className="wrap">{text}</span>
+                  </h1>
+                  <p>
+                    At ALPHAXEONIX, We Transform brands into powerful digital
+                    presences through innovative branding, digital marketing
+                    strategies, And effective audience engagement. Our Mission
+                    is to craft unique brand identities that resonate, inspire
+                    and drive growth in the fast-paces digital world
+                  </p>
+                  <button onClick={() => console.log("connect")}>
+                    Let's connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Image" />

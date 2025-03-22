@@ -746,6 +746,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: bold;
   color: white; /* White text for the heading */
   margin-bottom: 15px;
+  text-align: center;
+}
+.footer-heading-contact {
+  text-align: right;
+  font-weight: bold;
 }
 
 /* Footer Links Styling (Quick Links in a circle) */
@@ -819,4 +824,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
     margin-top: 20px;
   }
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 270px;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.reviewer-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.review-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.review-stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.review-date {
+  font-size: 12px;
+  opacity: 0.7;
 }

@@ -34,6 +34,9 @@ import projectImg18_2 from "../assets/img/New folder/SugarDrop 2.jpg";
 import projectImg18_3 from "../assets/img/New folder/SugarDrop 3.jpg";
 import projectImg18_4 from "../assets/img/New folder/SugarDrop 4.jpg";
 
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+
 export const Projects = () => {
   const Projects = [
     {

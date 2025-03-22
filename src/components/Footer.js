@@ -16,7 +16,7 @@ export const Footer = () => {
 
           {/* Quick Links Section */}
           <Col md={4} sm={12} className="text-center text-sm-start">
-            <h5 className="footer-heading">Quick Links</h5>
+            <h5 className="footer-heading">Navigate</h5>
             <ul className="footer-links">
               <li>
                 <a href="/">Home</a>
@@ -38,7 +38,7 @@ export const Footer = () => {
 
           {/* Contact Section */}
           <Col md={4} sm={12} className="text-center text-sm-end">
-            <h5 className="footer-heading">Contact Us</h5>
+            <h5 className="footer-heading-contact">Contact Us</h5>
             <p>123 Main St, City, Country</p>
             <p>Email: info@example.com</p>
             <p>Phone: +1 234 567 890</p>
