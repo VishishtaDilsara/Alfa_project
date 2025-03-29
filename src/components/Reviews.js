@@ -2,15 +2,17 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
+import reviewImg1 from "../assets/img/Review/1.jpg";
+import star5 from "../assets/img/Review/Stars/5-stars.png";
 
 // Sample review data
 const reviews = [
   {
     id: 1,
     name: "John Doe",
-    image: "../assets/img/reviewer1.jpg",
+    image: reviewImg1,
     feedback: "Amazing service! Highly recommended.",
-    stars: "../assets/img/stars-5.png",
+    stars: star5,
     date: "March 20, 2025",
   },
   {
@@ -66,13 +68,14 @@ export const Reviews = () => {
                       alt={review.name}
                       className="reviewer-img"
                     />
-                    <p className="feedback">{review.feedback}</p>
+                    <h5 className="reviewer-name">{review.name}</h5>
+                    <p className="review-text">{review.feedback}</p>
                     <img
                       src={review.stars}
                       alt="rating"
-                      className="stars-img"
+                      className="review-stars"
                     />
-                    <p className="date">{review.date}</p>
+                    <p className="review-date">{review.date}</p>
                   </div>
                 ))}
               </Carousel>
