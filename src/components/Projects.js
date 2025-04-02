@@ -1,38 +1,27 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projectImg1 from "../assets/img/Project images/Logo/projImg1.png";
-import projectImg2 from "../assets/img/Project images/Logo/projImg2.png";
-import projectImg3 from "../assets/img/Project images/Logo/projImg3.png";
-import projectImg4 from "../assets/img/Project images/Logo/projImg4.png";
-import projectImg5 from "../assets/img/Project images/Logo/projImg5.png";
-import projectImg6 from "../assets/img/Project images/Logo/projImg6.png";
-import projectImg7 from "../assets/img/Project images/Logo/projImg7.png";
-import projectImg8 from "../assets/img/Project images/Logo/projImg8.png";
-import projectImg9 from "../assets/img/Project images/Logo/projImg9.png";
-import projectImg10 from "../assets/img/Project images/Logo/projImg10.png";
+import projectImg1 from "../assets/img/Project images/Logo Noxium New/1.png";
+import projectImg2 from "../assets/img/Project images/Logo Noxium New/2.png";
+import projectImg3 from "../assets/img/Project images/Logo Noxium New/3.png";
+import projectImg4 from "../assets/img/Project images/Logo Noxium New/4.png";
+import projectImg5 from "../assets/img/Project images/Logo Noxium New/5.png";
+import projectImg6 from "../assets/img/Project images/Logo Noxium New/6.png";
+import projectImg7 from "../assets/img/Project images/Logo Noxium New/7.png";
+import projectImg8 from "../assets/img/Project images/Logo Noxium New/8.png";
+import projectImg9 from "../assets/img/Project images/Logo Noxium New/9.png";
+import projectImg10 from "../assets/img/Project images/Logo Noxium New/10.png";
 import projectImg11 from "../assets/img/Project images/Logo/projImg11.png";
-import projectImg12 from "../assets/img/Project images/Logo/projImg12.png";
 import projectImg13 from "../assets/img/Project images/Logo/projImg13.png";
-import projectImg14 from "../assets/img/Project images/Logo/projImg14.png";
-import projectImg15 from "../assets/img/Project images/Logo/projImg15.png";
-import projectImg16 from "../assets/img/Project images/Logo/projImg16.png";
-import projectImg17 from "../assets/img/Project images/Logo/projImg17.png";
-import projectImg18 from "../assets/img/Project images/Logo/projImg18.png";
-import projectImg19 from "../assets/img/Project images/Logo/projImg19.png";
-import projectImg20 from "../assets/img/Project images/Logo/projImg20.png";
-import projectImg21 from "../assets/img/Project images/Logo/projImg21.png";
-import projectImg22 from "../assets/img/Project images/Logo/projImg22.png";
-import projectImg23 from "../assets/img/Project images/Logo/projImg23.png";
-import projectImg24 from "../assets/img/Project images/Logo/projImg24.png";
-import projectImg25 from "../assets/img/Project images/Logo/projImg25.png";
-import projectImg26 from "../assets/img/Project images/Logo/projImg26.png";
-import projectImg27 from "../assets/img/Project images/Logo/projImg27.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
-import projectImg18_1 from "../assets/img/New folder/SugarDrop 1.jpg";
-import projectImg18_2 from "../assets/img/New folder/SugarDrop 2.jpg";
-import projectImg18_3 from "../assets/img/New folder/SugarDrop 3.jpg";
-import projectImg18_4 from "../assets/img/New folder/SugarDrop 4.jpg";
+import projectImg1_1 from "../assets/img/Project images/Logo Noxium New/1.1.png";
+import projectImg1_2 from "../assets/img/Project images/Logo Noxium New/1.2.png";
+import projectImg1_3 from "../assets/img/Project images/Logo Noxium New/1.3.png";
+
+import projectImg2_1 from "../assets/img/Project images/Logo Noxium New/2.1.png";
+import projectImg2_2 from "../assets/img/Project images/Logo Noxium New/2.2.png";
+import projectImg2_3 from "../assets/img/Project images/Logo Noxium New/2.3.png";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -44,12 +33,14 @@ export const Projects = () => {
       description:
         "Designed to the Institute of Education A + Education. We made sure to prepare as a simple logo and easy to remember.",
       imgUrl: projectImg1,
+      moreImages: [projectImg1_1, projectImg1_2, projectImg1_3],
     },
     {
       title: "Mouj The Maa",
       description:
         " A Logo, created for a traditional manufacturing company in India. The specialty of this is that it is designed to symbolize a woman (his mother). It was his request. Created using illustrator & built in 2-3 days.",
       imgUrl: projectImg2,
+      moreImages: [projectImg2_1, projectImg2_2, projectImg2_3],
     },
     {
       title: "Eyes of the NISH",
@@ -105,106 +96,12 @@ export const Projects = () => {
         "Mr. Malith Maduranga is one of the oders given to us. Designed to the minimal logo format, this was official logo His GEM BUSINESS",
       imgUrl: projectImg11,
     },
-    {
-      title: "Miasi Colonies",
-      description:
-        "Another beautiful oder that came through Freelancing.This was created in the colonies of Miasi colonies.",
-      imgUrl: projectImg12,
-    },
+
     {
       title: "Austrailian Spice Business",
       description:
         "AlfhaXeonix successfully designed a traditional logo for Mr. Herman Melanson's spice business in Australia. The logo embodies a classic and authentic aesthetic, incorporating elements that reflect the rich heritage and natural essence of the spice trade. With earthy tones and elegant design details, it captures the authenticity and quality of the products while resonating with both traditional and modern markets.",
       imgUrl: projectImg13,
-    },
-    {
-      title: "Akira",
-      description:
-        "SimpleAlfhaXeonix designed a logo for Akira, a Japanese educational institution. The logo features a Japanese mountain symbolizing strength and stability, aligning with Japanese cultural values. Akira, meaning bright or unconquerable, reflects the institution's commitment to excellence. The design combines traditional and modern elements with clean, minimalist lines.",
-      imgUrl: projectImg14,
-    },
-    {
-      title: "Alfhaxeonix",
-      description:
-        "AlfhaXeonix's logo features two hearts formed from the fingerprints of the owner's family, surrounded by eight smaller hearts. The design symbolizes unity and connection. The tagline 'Creation of Illusion' highlights the company's creative approach to digital marketing and branding.",
-      imgUrl: projectImg15,
-    },
-    {
-      title: "Galaxy Innovations",
-      description:
-        "An official logo of vehicle shops at Dubai.Clint was demanded to create a luxury logo.Simple",
-      imgUrl: projectImg16,
-    },
-    {
-      title: "Education Factory",
-      description:
-        "A teacher represents logo ,, Mr.Mohomed Rikshan Sir gave this oder.This is a 3D logo. is designed by illustranter",
-      imgUrl: projectImg17,
-    },
-    {
-      title: "Sugar Drop",
-      description:
-        "The 'Sugerdrop' logo features a stylized sugar drop with bold typography, using soft pastel colors to evoke sweetness and freshness. Darker tones represent the delivery aspect, while subtle food-related elements, like a fork or spoon, highlight the food delivery service. The design is modern, clean, and inviting.",
-      imgUrl: projectImg18,
-      moreImages: [
-        projectImg18_1,
-        projectImg18_2,
-        projectImg18_3,
-        projectImg18_4,
-      ],
-    },
-    {
-      title: "Gizzel",
-      description:
-        "The logo created for the 'Gizeel' business is in gold color, featuring intricate monogram elements. This design combines elegance and sophistication, symbolizing the brand's value and trustworthiness. The gold color adds a luxurious touch, blending traditional and modern aesthetics, making the logo visually appealing and memorable.",
-      imgUrl: projectImg19,
-    },
-    {
-      title: "SS DJ Entertainment",
-      description:
-        "AlfhaXeonix successfully designed a dynamic logo for SSDJ, tailored to suit the vibrant DJ culture in Sri Lanka. The logo features bold, energetic elements with eye-catching colors and shapes that represent music, rhythm, and entertainment. Inspired by modern DJ aesthetics, it captures the lively atmosphere of events and parties while reflecting SSDJ's unique brand identity in the music industry.",
-      imgUrl: projectImg20,
-    },
-    {
-      title: "Joyful Jewelery",
-      description:
-        "AlfhaXeonix designed the branding logo for Joyfull Jewellery, featuring two 'J' letters as the icon. The design uses a gold color, symbolizing luxury, elegance, and the high-end quality of the jewelry brand.",
-      imgUrl: projectImg21,
-    },
-    {
-      title: "Island Tours",
-      description:
-        "AlfhaXeonix created a vibrant logo for Iland Tours, featuring a beautiful island as the central element. The design incorporates a full range of colors, capturing the essence of exotic destinations and the adventure of travel.",
-      imgUrl: projectImg22,
-    },
-    {
-      title: "Vincit",
-      description:
-        "Mr.Nimshan Jayawardena chose AlfhaXeonix to design his business logo, featuring a water bottle icon symbolizing purity and innovation, reflecting the brand's commitment to quality.",
-      imgUrl: projectImg23,
-    },
-    {
-      title: "Enchanting Moments",
-      description: "Is a very simple logo. This is designed by Illustrator.",
-      imgUrl: projectImg24,
-    },
-    {
-      title: "korean Updates",
-      description:
-        "Media Channel logo. A Sri Lankan resident of Korea was given the oder.",
-      imgUrl: projectImg25,
-    },
-    {
-      title: "Glamour",
-      description:
-        "AlfhaXeonix designed a luxurious logo and branding kit for Glmour, reflecting elegance and sophistication. The logo uses refined elements to convey the high-end nature of the brand, while the branding kit ensures a consistent, premium image across all platforms.",
-      imgUrl: projectImg26,
-    },
-    {
-      title: "Accounting Expert",
-      description:
-        "A logo designed to mr.gayan jayasooriya. one of the minimal logo. Designed with photoshop.",
-      imgUrl: projectImg27,
     },
   ];
   return (

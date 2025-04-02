@@ -34,11 +34,10 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Our Skills</h2>
               <p>
-                We specialize in creating effective digital strategies that
-                drive growth, boost engagement, and enhance your onlinepresence.
-                <br />
-                Our expertise covers a wide range of digital marketing solutions
-                to help your business succeed.
+                Expert in crafting unique brand identities, designing
+                eye-catching logos, Skilled in digital graphics, creative
+                direction, and visual storytelling to enhance brand presence.
+                Proficient in Adobe Creative Suite and modern design trends.
               </p>
               <Carousel
                 responsive={responsive}
@@ -47,31 +46,31 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>Logo design</h5>
+                  <h5>Brand Identity</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Facebook Page Manage</h5>
+                  <h5>Simple & clear design</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Visual Identity & Branding</h5>
+                  <h5>Visual Identity </h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>Social Media Post Design</h5>
+                  <h5> Typography Harmony</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Instagram Page Manage</h5>
+                  <h5>Color Psychology </h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Business Analysis</h5>
+                  <h5>Layout & Composition </h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Market Research</h5>
+                  <h5>User Experience</h5>
                 </div>
               </Carousel>
             </div>

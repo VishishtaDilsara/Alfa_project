@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/FULL.png";
+import headerImg from "../assets/img/Noxium Logo full.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -11,6 +11,7 @@ export const Banner = () => {
   const toRotate = [
     "Logo design",
     "Social Media Post Design",
+    "Printable Designs",
     "Facebook Page Manage",
     "Instagram Page Manage",
     "Market Research",
@@ -66,19 +67,19 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">
-                    Unlock Your Brand's Potential with ALFHAXEONIX
+                    Designing Creativity, Defining Brands
                   </span>
                   <h1>
-                    {`ALPHAXEONIX `}
+                    {`NOXIUM `}
                     <br />
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    At ALPHAXEONIX, We Transform brands into powerful digital
-                    presences through innovative branding, digital marketing
-                    strategies, And effective audience engagement. Our Mission
-                    is to craft unique brand identities that resonate, inspire
-                    and drive growth in the fast-paces digital world
+                    Noxium is a creative graphic design agency dedicated to
+                    crafting visually stunning and impactful designs. We
+                    specialize in branding, logo design, digital graphics, and
+                    UI/UX, bringing innovative ideas to life with a modern and
+                    professional touch.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let's connect <ArrowRightCircle size={25} />
