@@ -3,7 +3,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import reviewImg1 from "../assets/img/Review/1.jpg";
+import reviewImg2 from "../assets/img/Review/2.jpg";
+import reviewImg3 from "../assets/img/Review/3.jpg";
+import reviewImg4 from "../assets/img/Review/4.jpg";
 import star5 from "../assets/img/Review/Stars/5-stars.png";
+import star4_5 from "../assets/img/Review/Stars/4.5-stars.png";
+import star4 from "../assets/img/Review/Stars/4-stars.png";
+
 
 // Sample review data
 const reviews = [
@@ -18,18 +24,26 @@ const reviews = [
   {
     id: 2,
     name: "Jane Smith",
-    image: "../assets/img/reviewer2.jpg",
+    image: reviewImg2,
     feedback: "Professional and creative designs!",
-    stars: "../assets/img/stars-4.png",
+    stars: star4,
     date: "March 18, 2025",
   },
   {
     id: 3,
     name: "Michael Lee",
-    image: "../assets/img/reviewer3.jpg",
+    image: reviewImg3,
     feedback: "Very satisfied with the branding work.",
-    stars: "../assets/img/stars-5.png",
+    stars: star4_5,
     date: "March 15, 2025",
+  },
+  {
+    id: 4,
+    name: "Reena Dante",
+    image: reviewImg4,
+    feedback: "Very professional and Modern looking output.",
+    stars: star4_5,
+    date: "March 10, 2025",
   },
 ];
 

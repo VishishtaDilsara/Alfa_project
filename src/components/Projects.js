@@ -66,23 +66,18 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const Projects = [
     {
-      title: "A+ Institute",
-      description:
-        "Designed to the Institute of Education A + Education. We made sure to prepare as a simple logo and easy to remember.",
+      title: "NextGen Graphic",
       imgUrl: projectImg1,
       moreImages: [projectImg1_1, projectImg1_2, projectImg1_3],
     },
     {
-      title: "Mouj The Maa",
-      description:
-        " A Logo, created for a traditional manufacturing company in India. The specialty of this is that it is designed to symbolize a woman (his mother). It was his request. Created using illustrator & built in 2-3 days.",
+      title: "Travel Tales",
+    
       imgUrl: projectImg2,
       moreImages: [projectImg2_1, projectImg2_2, projectImg2_3],
     },
     {
-      title: "Eyes of the NISH",
-      description:
-        "A logo designed to the Youtube channel. Client's request was to add his chariots logo. He chose the individual Silver color and this was completed within 3 days.",
+      title: "See Lanka Travels",
       imgUrl: projectImg3,
       moreImages: [
         projectImg3_1,
@@ -93,9 +88,7 @@ export const Projects = () => {
       ],
     },
     {
-      title: "Dahan Trading",
-      description:
-        "A design that came to Alfhaxeonix as a Farlancing Oder to a farm in Australia. Clint requests three animals to create logo to represent a farm.",
+      title: "Glam by Reena Beauty",
       imgUrl: projectImg4,
       moreImages: [
         projectImg4_1,
@@ -106,44 +99,32 @@ export const Projects = () => {
       ],
     },
     {
-      title: "Madhava's Kitchen",
-      description:
-        "A little different logo. Mr. Mahadawa The kitchen logo is designed to an Indian Client.This took 3 days to finish it was created by the software.",
+      title: "Mooi Lanka Travels",
       imgUrl: projectImg5,
       moreImages: [projectImg5_1, projectImg5_2, projectImg5_3],
     },
     {
-      title: "Namma Uur",
-      description:
-        "One of the most enjoyable logo, Designed with the fish industry, it was created through the Illustrator Software.",
+      title: "Saksas Higher Educational Institute",
       imgUrl: projectImg6,
       moreImages: [projectImg6_1, projectImg6_2, projectImg6_3],
     },
     {
-      title: "Kebab Corner",
-      description:
-        "One of the designed to a Indonesian Clint, his request was a colorful, delicious logo, alfhaxeonix, and gave us his request for three days.",
+      title: "Jayawickrama Group",
       imgUrl: projectImg7,
       moreImages: [projectImg7_1, projectImg7_2, projectImg7_3, projectImg7_4],
     },
     {
-      title: "Auto Mobile",
-      description:
-        "At a time ago for the Auto Mobil, London suddenly created a logo.",
+      title: "Dzac by RnS",
       imgUrl: projectImg8,
       moreImages: [projectImg8_1, projectImg8_2, projectImg8_3, projectImg8_4],
     },
     {
-      title: "Monarch",
-      description:
-        "An Art logo designed for Monarch Hotel. Created by photoshop software.",
+      title: "DL Easy",
       imgUrl: projectImg9,
       moreImages: [projectImg9_1, projectImg9_2, projectImg9_3, projectImg9_4],
     },
     {
-      title: "School in India",
-      description:
-        "Alfhaxeonix creating logo in any language, and this was based on a school in India.",
+      title: "Chela Clicks Photography",
       imgUrl: projectImg10,
       moreImages: [projectImg10_1, projectImg10_2, projectImg10_3],
     },
