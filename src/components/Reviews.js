@@ -10,7 +10,6 @@ import star5 from "../assets/img/Review/Stars/5-stars.png";
 import star4_5 from "../assets/img/Review/Stars/4.5-stars.png";
 import star4 from "../assets/img/Review/Stars/4-stars.png";
 
-
 // Sample review data
 const reviews = [
   {

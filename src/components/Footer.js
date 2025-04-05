@@ -60,7 +60,7 @@ export const Footer = () => {
         <Row className="text-center pt-4">
           <Col sm={12}>
             <p className="text-muted">
-              &copy; 2025 Your Company. All Rights Reserved.
+              &copy; 2025 Noxium. All Rights Reserved.
             </p>
           </Col>
         </Row>

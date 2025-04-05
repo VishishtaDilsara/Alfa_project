@@ -60,6 +60,22 @@ import projectImg10_1 from "../assets/img/Project images/Logo Noxium New/10.1.pn
 import projectImg10_2 from "../assets/img/Project images/Logo Noxium New/10.2.png";
 import projectImg10_3 from "../assets/img/Project images/Logo Noxium New/10.3.png";
 
+import socialImg1 from "../assets/img/Project images/Social Media/1.png";
+import socialImg2 from "../assets/img/Project images/Social Media/2.png";
+import socialImg3 from "../assets/img/Project images/Social Media/3.png";
+import socialImg4 from "../assets/img/Project images/Social Media/4.png";
+import socialImg5 from "../assets/img/Project images/Social Media/5.png";
+import socialImg6 from "../assets/img/Project images/Social Media/6.png";
+import socialImg7 from "../assets/img/Project images/Social Media/7.png";
+import socialImg8 from "../assets/img/Project images/Social Media/8.png";
+import socialImg9 from "../assets/img/Project images/Social Media/9.png";
+
+import otherImg1 from "../assets/img/Project images/Other/1.png";
+import otherImg2 from "../assets/img/Project images/Other/2.png";
+import otherImg3 from "../assets/img/Project images/Other/3.png";
+import otherImg4 from "../assets/img/Project images/Other/4.png";
+import otherImg5 from "../assets/img/Project images/Other/5.png";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -72,7 +88,7 @@ export const Projects = () => {
     },
     {
       title: "Travel Tales",
-    
+
       imgUrl: projectImg2,
       moreImages: [projectImg2_1, projectImg2_2, projectImg2_3],
     },
@@ -129,6 +145,55 @@ export const Projects = () => {
       moreImages: [projectImg10_1, projectImg10_2, projectImg10_3],
     },
   ];
+
+  const SocialMediaProjects = [
+    {
+      imgUrl: socialImg1,
+    },
+    {
+      imgUrl: socialImg2,
+    },
+    {
+      imgUrl: socialImg3,
+    },
+    {
+      imgUrl: socialImg4,
+    },
+    {
+      imgUrl: socialImg5,
+    },
+    {
+      imgUrl: socialImg6,
+    },
+    {
+      imgUrl: socialImg7,
+    },
+    {
+      imgUrl: socialImg8,
+    },
+    {
+      imgUrl: socialImg9,
+    },
+  ];
+
+  const OtherProjects = [
+    {
+      imgUrl: otherImg1,
+    },
+    {
+      imgUrl: otherImg2,
+    },
+    {
+      imgUrl: otherImg3,
+    },
+    {
+      imgUrl: otherImg4,
+    },
+    {
+      imgUrl: otherImg5,
+    },
+  ];
+
   return (
     <section className="project" id="project">
       <Container>
@@ -151,10 +216,10 @@ export const Projects = () => {
                   <Nav.Link eventKey="first">Logo Designs</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Facebook Posts</Nav.Link>
+                  <Nav.Link eventKey="second">Social Media Posts</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">AI Arts</Nav.Link>
+                  <Nav.Link eventKey="third">Others</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -173,8 +238,24 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum 2</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum 3</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                    {SocialMediaProjects.map((project, index) => {
+                      return (
+                        <ProjectCard key={index} imgUrl={project.imgUrl} />
+                      );
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <Row>
+                    {OtherProjects.map((project, index) => {
+                      return (
+                        <ProjectCard key={index} imgUrl={project.imgUrl} />
+                      );
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
