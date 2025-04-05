@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/NAME.png";
+import logo from "../assets/img/Noxium Logo full.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -39,9 +39,9 @@ export const Footer = () => {
           {/* Contact Section */}
           <Col md={4} sm={12} className="text-center text-sm-end">
             <h5 className="footer-heading-contact">Contact Us</h5>
-            <p>123 Main St, City, Country</p>
+            <p>No.01,Indigasketiya, Baddegama</p>
             <p>Email: info@example.com</p>
-            <p>Phone: +1 234 567 890</p>
+            <p>Phone: +94 787673391</p>
             <div className="social-icon mt-3">
               <a href="">
                 <img src={navIcon1} alt="Icon 1" />

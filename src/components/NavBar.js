@@ -95,7 +95,10 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button
+              className="vvd"
+              onClick={() => window.open("https://wa.me/94787673391", "_blank")}
+            >
               <span>Let's Connect</span>
             </button>
           </span>

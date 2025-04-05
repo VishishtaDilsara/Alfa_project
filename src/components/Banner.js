@@ -81,7 +81,11 @@ export const Banner = () => {
                     UI/UX, bringing innovative ideas to life with a modern and
                     professional touch.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button
+                    onClick={() =>
+                      window.open("https://wa.me/94787673391", "_blank")
+                    }
+                  >
                     Let's connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
