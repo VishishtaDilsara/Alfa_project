@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/img/Noxium Logo single.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon1 from "../assets/img/icon-tiktok.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon3 from "../assets/img/icon-behance.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -85,13 +85,25 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a
+                href="https://www.tiktok.com/@_vish_x__"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.facebook.com/share/1XyohWZCqX/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.behance.net/vishishdilsara"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon3} alt="" />
               </a>
             </div>

@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/img/Noxium Logo full.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon1 from "../assets/img/icon-tiktok.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon3 from "../assets/img/icon-behance.svg";
 
 export const Footer = () => {
   return (
@@ -40,16 +40,28 @@ export const Footer = () => {
           <Col md={4} sm={12} className="text-center text-sm-end">
             <h5 className="footer-heading-contact">Contact Us</h5>
             <p>No.01,Indigasketiya, Baddegama</p>
-            <p>Email: info@example.com</p>
+            <p>Email: vishishtadilsara2002@gmail.com</p>
             <p>Phone: +94 787673391</p>
             <div className="social-icon mt-3">
-              <a href="">
+              <a
+                href="https://www.tiktok.com/@_vish_x__"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon1} alt="Icon 1" />
               </a>
-              <a href="">
+              <a
+                href="https://www.facebook.com/share/1XyohWZCqX/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon2} alt="Icon 2" />
               </a>
-              <a href="">
+              <a
+                href="https://www.behance.net/vishishdilsara"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon3} alt="Icon 3" />
               </a>
             </div>
