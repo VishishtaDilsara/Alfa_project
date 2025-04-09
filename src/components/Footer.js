@@ -19,19 +19,19 @@ export const Footer = () => {
             <h5 className="footer-heading">Navigate</h5>
             <ul className="footer-links">
               <li>
-                <a href="/">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="/about">About Us</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
-                <a href="/skills">Skills</a>
+                <a href="#project">Projects</a>
               </li>
               <li>
-                <a href="/projects">Projects</a>
+                <a href="#reviews">Reviews</a>
               </li>
               <li>
-                <a href="/reviews">Reviews</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </Col>
