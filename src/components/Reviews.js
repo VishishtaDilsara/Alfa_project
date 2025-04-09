@@ -55,7 +55,7 @@ export const Reviews = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="reviews">
       <Container>
         <Row>
           <Col>
